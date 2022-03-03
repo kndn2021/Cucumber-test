@@ -1,0 +1,21 @@
+
+
+In feature file, if keyword having more scenario with declaring And keyword..
+Instead of And keyword, we can put * asterisk mark over there.
+e.g.
+
+Scenario: All done
+  Given I am out shopping
+  And I have eggs
+  And I have milk
+  And I have butter
+  When I check my list
+  Then I don't need anything
+  
+  Scenario: All done
+  Given I am out shopping
+  * I have eggs
+  * I have milk
+  * I have butter
+  When I check my list
+  Then I don't need anything
